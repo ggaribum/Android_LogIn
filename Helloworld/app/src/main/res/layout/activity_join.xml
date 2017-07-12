@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.onetwopunch.helloworld.JoinActivity">
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@+id/bt_IDcheck"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Name"
+        android:layout_below="@+id/et_Name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/bt_IDcheck"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_Pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Name"
+        android:layout_below="@id/et_Id"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_Pw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Name"
+        android:layout_below="@id/et_Pw"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Confirm_PW"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_Name"
+        android:layout_below="@+id/et_Pw2"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Email@address.com"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/bt_IDcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_Id"
+        android:layout_alignParentEnd="true"
+        android:text="CHECK" />
+
+    <Button
+        android:id="@+id/bt_Return"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/bt_Join"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bt_Join"
+        android:text="Return" />
+
+    <Button
+        android:id="@+id/bt_Join"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_Email"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/bt_Return"
+        android:text="Join Us" />
+
+
+</RelativeLayout>
